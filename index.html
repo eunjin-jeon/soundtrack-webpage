@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./pre-set.css">
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+  />
+
+</head>
+<body>
+    <header class="width-100 flex flex-row space-between">
+      <div class="logo"><a href="#">MMM</a></div>
+      <div class="search-bar">
+        <i class="fas fa-search"></i>
+        <input class="search-bar-input" type="search" placeholder="&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Search for..." />
+      </div>
+      <div class="gnb">
+        <ul class="flex flex-row space-between">
+          <li><a href="#">LOGIN</a></li>
+          <li><a href="#">JOIN</a></li>
+          <li><a href="#"><img src="./img/globe.png" alt=""></a></li>
+          <li><a href="#">
+            <div id="ham">
+              <div id="ham1"></div>
+              <div id="ham2"></div>
+              <div id="ham3"></div>
+            </div>
+          </a></li>
+        </ul>
+      </div>
+    </header>
+    <div id="container">    
+    <main class="width-100">
+      <div class="img">
+        <div id="content" class="flex flex-column justify-center align-center">
+          <span>WITH THE SOUNDTRACK</span>
+          <span>BECOME THE MOVIE CHARACTER</span>
+        </div>
+      </div>
+    </main>
+
+    <section id="recommendation">
+      
+      <div class="box1 flex flex-start">
+        <h1>MMM의 추천 사운드트랙</h1>
+      </div>
+      
+      <div class="box2 flex justify-center">
+        <div class="movie-name flex justify-center align-center">
+          <h3>중경삼림 (1994)</h3>
+        </div>
+      </div>
+      
+      <div class="slide_wrapper">
+        <ul class="slides flex">
+          <li><a href=""><img src="img/chunking-img-3.jpg" alt="">
+          <div class="song">
+            <p>Things In Life</p>
+            <span>Dennis Brown &nbsp;</span>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-soundcloud"></i></a>
+            <a href="#"><i class="fab fa-spotify"></i></a>
+          </div>
+          </a></li>
+          
+          <li><a href=""><img src="img/chunking-img-1.jpg" alt="" width="100" onmouseover="ppp()" onmouseout="sss()">
+          
+          <div class="song">
+            <p>California Dreamin'</p>
+            <span>The Mamas & Papas &nbsp;</span>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-soundcloud"></i></a>
+            <a href="#"><i class="fab fa-spotify"></i></a>
+
+            <audio id="sound1" controls autoplay>
+              <source src="./The Mamas And Papas - California Dreaming.mp3" type="audio/mp3">
+            </audio>
+            
+          </div>
+        </a>
+        </li>
+          <li><a href=""><img src="img/chunking-img-2.jpg" alt="">
+          <div class="song">
+            <p>夢中人(몽중인)</p>
+            <span>王菲(Faye Wong) &nbsp;</span>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-soundcloud"></i></a>
+            <a href="#"><i class="fab fa-spotify"></i></a>
+          </div>
+          </a></li>
+          <li><a href="">slide 04</a></li>
+          <li><a href="">slide 05</a></li>
+        </ul>
+
+      </div>
+
+      <p class="controls flex space-evenly">
+        <span class="prev"><img src="img/arrow1.png" alt=""></span>
+        <span class="now"><img src="img/waveform.png" alt=""></span>
+        <span class="next"><img src="img/arrow2.png" alt=""></span>
+      </p>
+
+      
+    </section>
+
+    <section id="category" class="width-100 flex space-around">
+    
+      <div class="con1">
+        <h1>카테고리별 사운드트랙</h1>
+        
+        <div class="category-menu">
+          <ul>
+            <li><a href="#" class="active">국가별 영화음악</a></li>
+            <li><a href="#">장르별 영화음악</a></li>
+            <li><a href="#">분위기를 위한 영화음악</a></li>
+            <li><a href="#">아카데미 수상 영화음악</a></li>
+            <li><a href="#">애니메이션 영화음악</a></li>
+          </ul>
+        </div>
+       
+      </div>
+
+      <div class="con2">
+        <img src="./img/fallen-angels.jpg" alt="">
+        <span>Hong Kong</span>
+        <a href=""><p>view more ></p></a>
+      </div>
+
+      <div class="con3 hidden">
+        <img src="./img/whiplash_scene.jpg" alt="">
+        <span>Jazz</span>
+        <a href=""><p>view more ></p></a>
+      </div>
+
+    </section>
+    
+    <footer>
+      <div id="box" class="flex space-between">
+        <div class="info-box">
+          <ul class="flex space-between">
+            <li><a href="#">정보</a></li>
+            <li><a href="#">서비스 이용약관</a></li>
+            <li><a href="#">개인정보 처리방침</a></li>
+            <li><a href="#">문의하기</a></li>
+            
+          </ul>
+        </div>
+      <div class="icon-box">
+        <ul class="flex space-around">
+          <li><a href=""><img src="img/instagram.png" alt=""></a></li>
+          <li><a href=""><img src="img/facebook-xxl.png" alt=""></a></li>
+          <li><a href=""><img src="img/twitter-xxl.png" alt=""></a></li>
+          
+        </ul>
+      </div>
+
+      </div>
+      
+      <div id="copyright" class="flex space-between">
+        <div id="logo-img"><a href="">MMM</a></div>
+        <p>Copyright © 2021 by MMM, Inc. All rights reserved.</p>
+      </div>
+    </footer>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
